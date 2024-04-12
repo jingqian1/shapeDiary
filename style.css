@@ -321,15 +321,32 @@ footer {
         overflow: auto;
         letter-spacing: 2px;
     }
-    .video-container {
+    .container {
         position: relative;
-        width: 70%;
-        max-width: 70%;
+        width: 100%;
+            /* Adjust as needed */
+        height: 100vh;
+            /* Adjust as needed */
+    }
+
+    .photoGallery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
         height: auto;
-        display: flex;
-        align-items: center;
+        /* Set height to 50% of the viewport height */
+        margin-top: 20px;
+        /* Add some space between the text area and photo gallery */
+        overflow: auto;
+        z-index: 0;
         margin: 0 auto;
+    }
     
+    .photoGallery img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
     
     .video-container video {
@@ -338,17 +355,17 @@ footer {
     }
 
     .overlay-form {
+        text-align: center;
         position: absolute;
-        top: 20%;
-        left: 10%;
-        display: inline-block;
-        align-items: center;
-        transform: translate(-50%);
-    /*padding: 10px 20px;*/
-        width: 70%;
-        max-width: 70%;
-        height: auto;
         margin: 0 auto;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        resize: none;
+        overflow: auto;
+        z-index: 1;
+    /* Ensure the text area appears above the GIF layer */
 
         border-color: transparent;
         background: transparent;
@@ -358,7 +375,6 @@ footer {
         font-size: 50%;
     }
     .form {
-        color: rgb(179, 255, 147);
         overflow: scroll;
         max-width: 70%;
         margin: 0 auto;
