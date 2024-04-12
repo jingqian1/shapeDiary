@@ -319,7 +319,7 @@ footer {
     }
     .container {
         position: relative;
-        width: 100%;
+        max-width: 100%;
             /* Adjust as needed */
         height: 100vh;
             /* Adjust as needed */
@@ -329,7 +329,7 @@ footer {
       position: absolute;
       top: 0;
       left: 50%;
-      width: 90%;
+      max-width: 100%;
       transform: translateX(-50%);
       /* Center the gallery horizontally */
       height: auto;
@@ -343,7 +343,7 @@ footer {
 
   .photoGallery img {
       display: block;
-      width: 100%;
+      max-width: 100%;
       height: auto;
       /* margin: 0 auto; */
   }
@@ -367,9 +367,9 @@ footer {
     /* Position the top edge of the text area at the vertical center */
     left: 50%;
     /* Position the left edge of the text area at the horizontal center */
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     /* Center the text area both vertically and horizontally */
-    width: 90%;
+    max-width: 90%;
     /* Set width to 90% of the viewport width */
 
     /* Let the height adjust automatically based on content */
