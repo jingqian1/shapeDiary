@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cinzel-decorative-black {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.cormorant-garamond-light {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cormorant-garamond-regular {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cormorant-garamond-medium {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cormorant-garamond-bold {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cormorant-garamond-light-italic {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cormorant-garamond-medium-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cormorant-garamond-semibold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*/ <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900*/
+
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+
+html,
+body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    margin:0;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    font-size: 74px;
+    text-align: center;
+    color: rgb(255, 158, 228);
+    background-color: #ffa500;
+}
+ h1{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    color: rgb(255, 158, 228);
+    margin: 10 auto;
+    text-align: center;
+    font-size: 80px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    letter-spacing: 10px;
+ }
+
+.timeclock {
+    color: rgb(255, 182, 73);
+    position: relative;
+    left: 5%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 10px;
+    font-size: 28px;
+    text-align: left;
+    z-index: 5;
+}
+
+
+ol li{
+    position: relative;
+    font: inter;
+    font-size: 20px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    text-align: left;
+    color:rgb(34, 255, 255);
+}
+a{
+    transition-property: font-size;
+    transition-duration: 750ms;
+}
+a:link {
+    color:rgb(255, 165, 230);
+}
+a:hover {
+    color: rgb(255, 198, 64);
+}
+a:visited {
+    color: rgb(47, 255, 47);
+}
+a:active {
+    color: rgb(129, 213, 255);
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+.container {
+    position: relative;
+    width: 100%;
+    /* Adjust as needed */
+    height: 100vh;
+    /* Adjust as needed */
+}
+
+.photoGallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.photoGallery img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-form {
+    /* position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 200px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+        /* Ensure the text area appears above the GIF layer */
+   
+    border-color: transparent;
+    background: transparent;
+        
+}
+.form {
+    color: rgb(179, 255, 147);
+    overflow: scroll;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+
+}
+
+::placeholder {
+    color: rgb(245, 245, 131);
+    opacity: 1;
+    /* Firefox */
+}
+
+textarea[type=text] {
+    color: rgb(0, 255, 94);
+    background: transparent;
+    font-size: 60px;
+}
+
+input[type=submit] {
+    font-size: 40px;
+    background-color: #ffffff00;
+    border: none;
+    color: rgb(201, 255, 107);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px auto;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    color: darkorange;
+}
+
+footer {
+    position: relative;
+    color: #8cff99;
+    padding: 0.5rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 400;
+        color: rgb(255, 158, 228);
+        margin: 10 auto;
+        text-align: center;
+        font-size: 60px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: auto;
+        letter-spacing: 2px;
+    }
+    .video-container {
+        position: relative;
+        width: 70%;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+    
+    .video-container video {
+        width: 70%;
+        height: auto;
+    }
+
+    .overlay-form {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        display: inline-block;
+        align-items: center;
+        transform: translate(-50%);
+    /*padding: 10px 20px;*/
+        width: 70%;
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+
+        border-color: transparent;
+        background: transparent;
+
+    }
+    .input[type=text] {
+        font-size: 50%;
+    }
+    .form {
+        color: rgb(179, 255, 147);
+        overflow: scroll;
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    textarea{
+        /*left: 10px;*/
+        top: 10px;
+        width: calc(100vw - 20px);
+        /* calc and viewport to the rescue */
+        height: calc(100vh - 20px);
+        resize: none;
+    }
+
+}
+
+#test{
+    color: azure;
+}
