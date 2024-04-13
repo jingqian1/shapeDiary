@@ -286,7 +286,11 @@ footer {
     font-weight: 400;
     font-size: 20px;
 }
-
+.keyword {
+    /* Style for all keyword spans */
+    color: bisque;
+    /* Change to your desired default color */
+}
 .keyword-joy {
     color: yellow;
     /* Color for "joy" keyword */
