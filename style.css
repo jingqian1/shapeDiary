@@ -179,27 +179,31 @@ a:active {
     /* Adjust as needed */
 }
 
-.photoGallery {
+#photoGallery {
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 90%;
-    transform: translateX(-50%);
-        /* Center the gallery horizontally */
+    left: 0;
+    width: 100vw;
+    /* Adjust width to 100% of viewport width */
     height: auto;
-        /* Set height to 50% of the viewport height */
+    /* Automatically adjust height */
     margin-top: 20px;
-        /* Add some space between the text area and photo gallery */
+    /* Add margin from the top */
     overflow: auto;
+    /* Enable scrolling if needed */
     z-index: 0;
-    margin: 0 auto;
+    /* Set z-index for stacking order */
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Horizontally center the content */
 }
 
-.photoGallery img {
-    display:block;
-    width: 100%;
+#photoGallery img {
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
     height: auto;
-    /* margin: 0 auto; */
+    /* Automatically adjust height */
 }
 
 .overlay-form {
@@ -235,6 +239,8 @@ a:active {
    
     border-color: transparent;
     background: transparent;
+
+
         
 }
 .form {
@@ -329,28 +335,32 @@ footer {
             /* Adjust as needed */
     }
 
-  .photoGallery {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      max-width: 100%;
-      transform: translateX(-50%);
-      /* Center the gallery horizontally */
-      height: auto;
-      /* Set height to 50% of the viewport height */
-      margin-top: 20px;
-      /* Add some space between the text area and photo gallery */
-      overflow: auto;
-      z-index: 0;
-      margin: 0 auto;
-  }
+#photoGallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Adjust width to 100% of viewport width */
+    height: auto;
+    /* Automatically adjust height */
+    margin-top: 20px;
+    /* Add margin from the top */
+    overflow: auto;
+    /* Enable scrolling if needed */
+    z-index: 0;
+    /* Set z-index for stacking order */
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Horizontally center the content */
+}
 
-  .photoGallery img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      /* margin: 0 auto; */
-  }
+#photoGallery img {
+    max-width: 100%;
+    /* Ensure images don't exceed container width */
+    height: auto;
+    /* Automatically adjust height */
+}
    
     .overlay-form {
     /* position: absolute;
@@ -367,13 +377,13 @@ footer {
 
 
     /* Set position to absolute */
-    top: 50%;
+    top: 60%;
     /* Position the top edge of the text area at the vertical center */
-    left: 50%;
+    left:33.5%;
     /* Position the left edge of the text area at the horizontal center */
     transform: translate(-30%, -50%);
     /* Center the text area both vertically and horizontally */
-    max-width: 90%;
+    width: 100%;
     /* Set width to 90% of the viewport width */
 
     /* Let the height adjust automatically based on content */
@@ -395,6 +405,8 @@ footer {
 
     border-color: transparent;
     background: transparent;
+    display: flex;
+    align-items: center;
 
 }
  
@@ -403,7 +415,7 @@ footer {
     }
     .form {
         overflow: scroll;
-        max-width: 70%;
+        width: 50%;
         margin: 0 auto;
         display: flex;
         align-items: center;
