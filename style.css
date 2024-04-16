@@ -207,50 +207,32 @@ a:active {
 }
 
 .overlay-form {
-
-    
-          
-            /* Set position to absolute */
-    top: 50%;
-            /* Position the top edge of the text area at the vertical center */
-    left: 50%;
-            /* Position the left edge of the text area at the horizontal center */
-    transform: translate(-50%, -40%);
-            /* Center the text area both vertically and horizontally */
-    width: 90%;
-            /* Set width to 90% of the viewport width */
-        
-            /* Let the height adjust automatically based on content */
-    resize: both;
-            /* Allow resizing in both directions */
-    overflow: auto;
-            /* Show scrollbars when content overflows */
-   
-            /* Ensure text area appears above the photo gallery */
-        
-    text-align: center;
     position: absolute;
-    /* margin: 0 auto; */
-
-    height: auto;
-   
-    z-index: 1;
-        /* Ensure the text area appears above the GIF layer */
-   
-    border-color: transparent;
-    background: transparent;
-
-
-        
-}
-.form {
-
-    overflow: scroll;
-    max-width: 600px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    margin: 0 auto;
-    /* display: inline-block; */
+    /* Adjust the width as needed */
+    max-width: 600px;
+    /* Maximum width for larger screens */
+    overflow: auto;
+    z-index: 1;
+    /* Set z-index to overlap with the images */
+    display: flex;
+    justify-content: center;
+}
 
+textarea[type=text] {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 60px;
+    width: 100%;
+    /* Take up full width */
+}
+
+input[type=submit] {
+    width: 100%;
+    /* Take up full width */
 }
 
 ::placeholder {
@@ -259,16 +241,9 @@ a:active {
     /* Firefox */
 }
 
-textarea[type=text] {
-    color: rgb(255, 255, 255);
-    background: transparent;
-    font-size: 60px;
-}
-
 textarea {
     resize: none;
 }
-
 input[type=submit] {
     font-size: 40px;
     background-color: #ffffff00;
@@ -362,53 +337,7 @@ footer {
     /* Automatically adjust height */
 }
    
-    .overlay-form {
-    /* position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    font-size: 200px;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-   
-     */
-
-
-    /* Set position to absolute */
-    top: 60%;
-    /* Position the top edge of the text area at the vertical center */
-    left:33.5%;
-    /* Position the left edge of the text area at the horizontal center */
-    transform: translate(-30%, -50%);
-    /* Center the text area both vertically and horizontally */
-    width: 100%;
-    /* Set width to 90% of the viewport width */
-
-    /* Let the height adjust automatically based on content */
-    resize: both;
-    /* Allow resizing in both directions */
-    overflow: auto;
-    /* Show scrollbars when content overflows */
-
-    /* Ensure text area appears above the photo gallery */
-
-    text-align: center;
-    position: absolute;
-    /* margin: 0 auto; */
-
-    height: auto;
-
-    z-index: 1;
-    /* Ensure the text area appears above the GIF layer */
-
-    border-color: transparent;
-    background: transparent;
-    display: flex;
-    align-items: center;
-
-}
+ 
  
     .input[type=text] {
         font-size: 50%;
