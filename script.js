@@ -1,6 +1,11 @@
 
 
 //new version
+let detectedKeywords = [];
+
+let prevKeyword = "";
+let currentPhoto = null;
+
 window.onload = function() {
     document.getElementById("myTextarea").value = "";
     currentKeyword = "";
@@ -9,10 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     hidePhotoGallery();
 });
 
-let detectedKeywords = [];
 
-let prevKeyword = "";
-let currentPhoto = null;
 
 const debounce = (func, delay) => {
     let timeoutId;
@@ -42,6 +44,13 @@ document.querySelector('#myTextarea').addEventListener('input', function(event) 
     let keywordsIndex = [];
 
     // TODO : handle -1 
+    const isKeywordPresent = keywords.some(keyword => inputText.includes(keyword));
+
+    if (!isKeywordPresent) {
+        hidePhotoGallery();
+        console.log("No keyword detected");
+        return;
+    }
 
     for(let i=0; i< keywords.length; i++){
         keywordsIndex[i] = inputText.lastIndexOf(keywords[i]);
@@ -54,18 +63,25 @@ document.querySelector('#myTextarea').addEventListener('input', function(event) 
     const prevKeywordIndex = keywordsIndex.indexOf(Math.max(...keywordsIndex));
 
     lastKeyword = keywords[maxKeywordIndex];
-    prevKeyword = keywords[prevKeywordIndex];
+   // prevKeyword = keywords[prevKeywordIndex];
 
     //Handle the case when the keywordsIndex array is empty or the second latest word is not found
+    let prevKeyword;
     if (prevKeywordIndex !== -1) {
     // Use prevKeywordIndex to access the index of the second latest word in the keywords array
-        const lastKeyword = keywords[maxKeywordIndex];
-        const prevKeyword = keywords[prevKeywordIndex];
+      
+        prevKeyword = keywords[prevKeywordIndex];
         console.log("Latest keyword:", lastKeyword);
-        console.log("second latest word:", prevKeyword);
+        console.log("previous keyword:", prevKeyword);
     } else {
-        console.log("Second latest word not found or keywordsIndex array is empty");
+        console.log("previous keyword not found or keywordsIndex array is empty");
     }
+
+    // if (!lastKeyword || !inputText.endsWith(lastKeyword)) {
+    //     hidePhotoGallery();
+    //     return;
+    // }
+
 
     // console.log("prevKeywordIndex: "+ prevKeywordIndex)
     // console.log("prevKeyword: "+ prevKeyword)
