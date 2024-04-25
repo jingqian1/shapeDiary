@@ -134,7 +134,7 @@ document.querySelector('#myTextarea').addEventListener('input', function(event) 
 
 function checkKeywordPair(lastKeyword, prevKeyword) {
     console.log("Checking keyword pair:", prevKeyword, lastKeyword);
-    if (currentKeyword !== "" && prevKeyword !== "") {
+    if (prevKeyword !== "") {
         let keywordPair = prevKeyword + lastKeyword;
         console.log("Detected keyword pair:", keywordPair);
 
