@@ -100,7 +100,7 @@ document.querySelector('#myTextarea').addEventListener('input', function(event) 
         case "angry":
         case "anger":
         case "mad":
-            showPhotoGallery("angry.gif");
+            showPhotoGallery("anger.gif");
             break;
         case "trust":
         case "trusted":
